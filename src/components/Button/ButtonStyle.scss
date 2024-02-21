@@ -1,0 +1,33 @@
+$button-height:65px;
+
+button {
+    height: $button-height;
+    color: white;
+    outline: 1px solid black;
+    border: none;
+    font-size: 20px !important;
+    
+    &:hover {
+        position: relative;
+        color: black;
+        outline: 1px solid white;
+        z-index: 10 !important;
+    }
+}
+
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #decimal {
+    background-color: #4d4d4d;
+}
+
+#divide, #multiply, #subtract, #add {
+    background-color: rgb(102, 102, 102);
+}
+
+#equals {
+    height: calc(2 * $button-height);
+    background-color: rgb(0, 68, 102);
+}
+
+#clear {
+    background-color: rgb(172, 57, 57);
+}
