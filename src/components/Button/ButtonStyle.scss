@@ -1,17 +1,29 @@
 $button-height:65px;
 
 button {
+    position: relative;
     height: $button-height;
     color: white;
     outline: 1px solid black;
     border: none;
     font-size: 20px !important;
+    z-index: 2;
     
+    &:focus:not(:focus-visible) {
+        outline: 1px solid black !important;
+    }
+
     &:hover {
         position: relative;
         color: black;
         outline: 1px solid white;
-        z-index: 10 !important;
+        z-index: 3;
+    }
+
+    &:active {
+        position: relative;
+        transform: translateY(2px);
+        z-index: 1;
     }
 }
 

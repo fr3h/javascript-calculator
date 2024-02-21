@@ -36,7 +36,7 @@ function handleInputDecimal(state) {
 }
 
 function handleInputOperator(state, action) {
-    let updatedFormula = state.formula;
+    let updatedFormula = state.formula === '' ? '0' : state.formula;
     const endsWithEqual = /=$/; 
 
     if (endsWithEqual.test(updatedFormula)) {
